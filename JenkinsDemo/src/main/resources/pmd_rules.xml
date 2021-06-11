@@ -20,6 +20,7 @@ under the License.
 <description> The default ruleset used by the Maven PMD Plugin, when no other ruleset is specified. It contains the rules of the old (pre PMD 6.0.0) rulesets java-basic, java-empty, java-imports, java-unnecessary, java-unusedcode. This ruleset might be used as a starting point for an own customized ruleset [0]. [0] https://pmd.github.io/latest/pmd_userdocs_making_rulesets.html </description>
 <rule ref="category/java/bestpractices.xml/AvoidUsingHardCodedIP"/>
 <rule ref="category/java/bestpractices.xml/CheckResultSet"/>
+<rule ref="category/java/bestpractices.xml/UnusedImports" />
 <rule ref="category/java/bestpractices.xml/UnusedFormalParameter"/>
 <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
 <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
@@ -28,7 +29,7 @@ under the License.
 <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop"/>
 <rule ref="category/java/codestyle.xml/TooManyStaticImports"/>
 <rule ref="category/java/codestyle.xml/UnnecessaryFullyQualifiedName"/>
-<rule ref="category/java/codestyle.xml/UnnecessaryImport"/>
+<!-- <rule ref="category/java/codestyle.xml/UnnecessaryImport"/> -->
 <rule ref="category/java/codestyle.xml/UnnecessaryModifier"/>
 <rule ref="category/java/codestyle.xml/UnnecessaryReturn"/>
 <rule ref="category/java/codestyle.xml/UselessParentheses"/>
