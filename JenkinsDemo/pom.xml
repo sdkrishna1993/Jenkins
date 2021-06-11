@@ -29,6 +29,12 @@
 	</dependencies>
 	<reporting>
 		<plugins>
+		<plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>findbugs-maven-plugin</artifactId>
+            <version>3.0.4</version>
+        </plugin>
+		
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jxr-plugin</artifactId>
@@ -116,15 +122,15 @@
 					</configuration>
 				</plugin>
 
-				<plugin>
+			<!-- 	<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>findbugs-maven-plugin</artifactId>
 					<version>3.0.4</version>
 					<configuration>
-						<!-- rest of configuration -->
+						rest of configuration
 						<includeTests>true</includeTests>
 					</configuration>
-				</plugin>
+				</plugin> -->
 
 			</plugins>
 
